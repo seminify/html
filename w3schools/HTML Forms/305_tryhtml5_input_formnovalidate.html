@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>305_tryhtml5_input_formnovalidate</title>
+    <link rel="stylesheet" href="./305_tryhtml5_input_formnovalidate.css" />
+  </head>
+  <body>
+    <h1>The input formnovalidate attribute</h1>
+    <form action="./action_page.php">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formnovalidate="formovalidate"
+        value="Submit without validation"
+      />
+    </form>
+    <p>
+      <strong>Note:</strong> The formnovalidate attribute of the input tag is
+      not supported in Safari 10 (or earlier).
+    </p>
+    <script src="./305_tryhtml5_input_formnovalidate.js"></script>
+  </body>
+</html>

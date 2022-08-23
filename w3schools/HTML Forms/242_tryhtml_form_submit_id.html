@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>242_tryhtml_form_submit_id</title>
+    <link rel="stylesheet" href="./242_tryhtml_form_submit_id.css" />
+  </head>
+  <body>
+    <h2>The name Attribute</h2>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" value="John" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      If you click the "Submit" button, the form-data will be sent to a page
+      called "/action_page.php".
+    </p>
+    <p>
+      Notice that the value of the "First name" field will not be submitted,
+      because the input element does not have a name attribute.
+    </p>
+    <script src="./242_tryhtml_form_submit_id.js"></script>
+  </body>
+</html>
