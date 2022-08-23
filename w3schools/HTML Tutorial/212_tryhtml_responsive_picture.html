@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>212_tryhtml_responsive_picture</title>
+    <link rel="stylesheet" href="./212_tryhtml_responsive_picture.css" />
+  </head>
+  <body>
+    <h2>Show Different Images Depending on Browser width</h2>
+    <p>
+      Resiize the browser width and the image will change at 600px and 1500px
+    </p>
+    <picture>
+      <source srcset="./img_smallflower.jpg" media="(max-width:600px)" />
+      <source srcset="./img_flowers.jpg" media="(max-width:1500px)" />
+      <source srcset="./flowers.jpg" />
+      <img src="./img_flowers.jpg" alt="Flowers" style="width: auto" />
+    </picture>
+    <script src="./212_tryhtml_responsive_picture.js"></script>
+  </body>
+</html>

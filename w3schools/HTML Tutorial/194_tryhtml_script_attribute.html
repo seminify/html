@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>194_tryhtml_script_attribute</title>
+    <link rel="stylesheet" href="194_tryhtml_script_attribute.css" />
+  </head>
+  <body>
+    <h1>My First JavaScript</h1>
+    <p>
+      Here, a JavaScript changes the value of the scr (source) attribute of an
+      image.
+    </p>
+    <img src="./pic_bulboff.gif" id="myImage" width="100" height="180" />
+    <p>
+      <button type="button" onclick="light(1)">Light On</button
+      ><button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "pic_bulboff.gif";
+        } else {
+          pic = "pic_bulbon.gif";
+        }
+        document.getElementById("myImage").src = pic;
+      }
+    </script>
+  </body>
+</html>
