@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>342_tryhtml5_webstorage_local</title>
+    <link rel="stylesheet" href="./342_tryhtml5_webstorage_local.css" />
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      if (typeof Storage !== "undefined") {
+        localStorage.setItem("lastname", "Smith");
+        document.getElementById("result").innerHTML =
+          localStorage.getItem("lastname");
+      } else {
+        document.getElementById("result").innerHTML =
+          "Sorry, your browser does not support Web Storage...";
+      }
+    </script>
+    <script src="./342_tryhtml5_webstorage_local.js"></script>
+  </body>
+</html>
